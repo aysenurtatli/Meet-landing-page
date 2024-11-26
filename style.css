@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --cyan-600-color: rgb(77, 150, 169);
+    --cyan-300-color: #8FE3F9;
+    --purple-600-color: #855FB1;
+    --purple-300-color: #D9B8FF;
+    --slate-900-color: #28283D;
+    --slate-600-color: #87879D;
+    --white-color: #FAFAFA;
+    --text-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+p{
+    font-size: 18px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-inline: 32px;
+    overflow: hidden;
+}
+
+.top-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 64px;
+}
+
+.left-hero,
+.right-hero{
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 50px;
+}
+
+.left-hero{
+    left: -25px;
+}
+
+.right-hero{
+    right: -25px;
+}
+
+.mobile-hero{
+    max-width: 100%;
+    display: none;
+}
+
+.text-box{
+    max-width: 443px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-box h2{
+    font-weight: 900;
+    font-size: 64px;
+    color: var(--slate-900-color);
+}
+
+.text-box p{
+    font-weight: 400;
+    margin-block: 32px;
+    color: var(--slate-600-color);
+}
+
+.button-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 17px;
+}
+
+.btn{
+    color: var(--white-color);
+    padding: 16px 40px;
+    border-radius: 29px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+.download-btn{
+    background-color: var(--cyan-600-color);
+}
+
+.download-btn span{
+    color: var(--cyan-300-color);
+}
+
+.info-btn{
+    background-color: var(--purple-600-color);
+}
+
+.number-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+}
+
+ .circle {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    border: 1px solid var(--slate-600-color);
+    color: var(--slate-600-color);
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 700;
+}
+
+.circle::before{
+    content: '';
+    width: 1px;
+    height: 80px;
+    background-color: var(--slate-600-color);
+    position: absolute;
+    bottom: 55px;
+    
+}
+
+.bottom-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ .number-section-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    bottom: -120px;
+    z-index: 100;
+}
+
+.image-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-block: 64px;
+    margin-inline: 102px;
+}
+
+.image-wrapper img{
+    display: block;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-section-text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 544px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.image-section-text-box .subheading{
+    color: var(--cyan-600-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.image-section-text-box h3{
+    max-width: 420px;
+    font-size: 40px;
+    color: var(--slate-900-color);
+    margin-top: 16px;
+}
+
+.image-section-text-box p{
+    margin-top: 32px;
+    color: var(--slate-600-color);
+}
+
+.circle-2{
+    margin-block: 0px;
+    margin-top: 30px;
+    top: 120px;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./starter-code/assets/desktop/image-footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: var(--cyan-600-color);
+    margin-top: 100px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 90px;
+    text-align: center;
+    gap: 140px;
+    margin-block: 112px;
+}
+
+.footer-heading{
+    max-width: 22rem;
+    text-align: left;
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.footer-content p{
+    text-align: left;
+    font-weight: 500;
+    max-width: 355px;
+    color: var(--white-color);
+}
+
+.footer-content .btn{
+    background-color: var(--purple-600-color);
+}
+
+@media screen and (max-width: 1220px){
+
+    .header-image{
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+    }
+
+    .right-hero,
+    .left-hero{
+        display: none;
+    }
+
+    .mobile-hero{
+        display: block;
+    }
+
+    .image-wrapper{
+        margin-inline: 0px;
+    }
+
+    .footer-content{
+        gap: 24px;
+        flex-direction: column;
+        margin-block: 64px;
+
+    }
+
+    .footer-heading,
+    .footer-content p{
+        text-align: center;
+    } 
+
+}
+
+@media screen and (max-width: 768px){
+
+    p{
+        font-size: 16px;
+    }
+    
+    .text-box h2{
+        font-size: 40px;
+    }
+    .button-box{
+        flex-direction: column;
+    }
+    .image-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .image-section-text-box .subheading{
+        font-size: 12px;
+    }
+
+    .image-section-text-box h3{
+        font-size: 32px;
+    }
+
+    .footer{
+        background: url(./starter-code/assets/tablet/image-footer.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: soft-light;
+        background-color: var(--cyan-600-color);
+        height: 400px;
+    }
+
+    .footer-heading{
+        font-size: 32px;
+    }
+
+    
+
+}
+
+
+
