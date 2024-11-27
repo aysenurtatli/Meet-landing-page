@@ -110,6 +110,7 @@ p{
     font-weight: 700;
     text-align: center;
     border: none;
+    cursor: pointer;
 }
 
 .download-btn{
@@ -212,6 +213,7 @@ p{
     font-size: 40px;
     color: var(--slate-900-color);
     margin-top: 16px;
+    font-weight: 900;
 }
 
 .image-section-text-box p{
